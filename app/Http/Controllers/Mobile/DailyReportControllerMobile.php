@@ -324,8 +324,8 @@ class DailyReportControllerMobile extends Controller
         $mailSettings = [
             'host' => 'email-smtp.eu-west-1.amazonaws.com',
             'port' => '587',
-            'username' => 'AKIAVELZI4LG7BOONHNQ',
-            'password' => 'BCtcQrgPvkRTShDNtgsgA8nLbIAAYUNQEwlFzmZVCM9M',
+            'username' => 'XXX',
+            'password' => 'XXX',
             'encryption' => 'tls',
             'from_email' => 'noreply@openit.gr',
             'from_name' => 'Αναπνέω Beta',
