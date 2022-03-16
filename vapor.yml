@@ -1,0 +1,21 @@
+id: 20254
+name: anapneo
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.0:al2'
+        build:
+            - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.0:al2'
+        build:
+            - 'composer install --classmap-authoritative'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run dev && RMDIR /Q/S node_modules'
+        deploy:
+            - 'php artisan migrate'

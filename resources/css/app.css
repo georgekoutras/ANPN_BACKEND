@@ -1,0 +1,179 @@
+.sidebar-link.active{
+    color: #2196f3;
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    color: #B94A48;
+
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+body:not(.is-collapsed) .sidebar-logo a .logo{
+    width: 200px !important;
+}
+
+.footer-logo img{
+    max-height: 120px !important;
+}
+
+.main-content{
+    min-height: calc(100vh - 160px) !important;
+}
+
+@font-face {
+    font-family: jura;
+    src: url(/fonts/Jura-Medium.otf);
+}
+
+body, h1, h2, h3, h4, h5, a{
+    font-family: jura !important;
+}
+
+body{
+    font-size: 16px !important;
+}
+
+.parsley-error .select2-container--default .select2-selection--multiple,.parsley-error .select2-container--default .select2-selection--single{
+    background-color: #F2DEDE !important;
+}
+
+.parsley-errors-list .text-danger, .files .text-danger{
+    color: #E74C3C !important;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.login-form{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-screen{
+    background-color: #e0e0e0;
+    width: 90vh;
+}
+
+.label-cat-min{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.label-cat-max{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.label-cat{
+    font-weight: bold;
+    width: 10%;
+
+}
+
+.radio-label{
+    transform: scale(2);
+}
+
+.radio-label {display: block;
+    position: relative;
+    padding: 5px 5px 5px 20px;
+}
+.radio-label input {display: none;}
+.radio-label span {border: 1px solid #ccc; width: 15px; height: 15px; position: absolute; overflow: hidden; line-height: 1; text-align: center; border-radius: 100%; font-size: 10pt; left: 0; top: 50%; margin-top: -7.5px;}
+.radio-label input:checked + span {background: dodgerblue; border: dodgerblue 1px solid; color: white; font-weight: bold}
+
+body:not(.is-collapsed) .sidebar-logo a .logo{
+    width: 170px !important;
+}
+
+.sidebar {
+    width: 240px !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .is-collapsed .sidebar:not(:hover) {
+        width: 80px !important;
+    }
+}
+
+.page-container {
+    padding-left: 240px !important;
+}
+
+.is-collapsed .page-container {
+    padding-left: 80px !important;
+}
+
+.sweet-btn-delete{
+    background-color: #f44336 !important;
+}
+
+.header {
+    border-bottom: 0px !important;
+    width: calc(100% - 240px) !important;
+}
+
+.is-collapsed .header {
+    width: calc(100% - 80px) !important;
+}
+
+.sidebar-logo {
+    border-bottom: 0px !important;
+}
+
+.dropdown-toggle::after{
+    margin-top: 2px;
+}
+
+[class^=ti-] {
+    vertical-align: middle;
+}
+
